@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE CLONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    *{
+        margin:0; padding:0; box-sizing: border-box;
+    }
+    html,body{
+        font-family: sans-serif; font-weight: 400;
+    }
+    .main{
+height: 100vh; width: 100%; background-color: #fffffff6;
+    }
+    .nav{
+        height: 110px; width: 100%; display: flex; justify-content: space-between; align-items: center;padding: 0px 50px;
+    }
+    .nav-part-1{
+        display: flex; align-items: center; justify-content: center;
+    }
+    .nav img{
+height: 50px; width: auto; margin-right: 60px; cursor: pointer;
+    }
+    .nav-part-1 ul{
+        display: flex;align-items: end; justify-content: center; list-style: none;}
+    .nav-part-1 li{
+        margin-right: 40px;font-size: 19px; font-weight: 500; text-transform:uppercase; 
+    }
+    .nav-part-2{
+        margin-right: 40px; font-size:23px; font-weight: 500; justify-content: space-evenly; 
+    }
+    .content{
+        height:calc(100%- 110px);
+        width: 100%; position: relative; display: flex;
+    }
+    .btn{
+        background-color: #000; color: white; font-size: 15px; padding: 12px 40px; font-weight: 600; border: none;
+        border-radius: 50px;border-top-left-radius:0%;
+    }
+    .content-left{
+        height:100% ; padding: 80px 100px;width: 40%;
+    }
+    .content-left h5{
+        font-size: 20px; text-transform: capitalize; color:#555; margin-bottom: 10px;
+    }
+    .content-left h1{
+        font-size: 55px; text-transform: uppercase; color: black; margin-bottom: 25px;
+    }
+    .content-left p{
+        color: #000; font-size:20px; width:80%;margin-bottom: 30px;
+    }
+    .content-right{
+        height: 100%; width: 60%; padding: 110px 100px; white-space: nowrap;
+    }
+    .product{
+        height: 370px; width: 250px;background-color: #1011; position: relative; box-shadow: 0px 5px 10px rgba(17, 0, 17, 0.3);
+display: inline-block; margin-right: 20px;
+    }
+    .product img{
+        height: 100%; width: 100%;object-fit: contain; position: absolute; bottom: 20%; 
+    }
+    .product h4{
+        font-size: 18px; text-transform: capitalize; position: absolute;bottom: 28%;
+    }
+    .category{
+        position: absolute; bottom: 20%;font-weight: 500; text-transform: capitalize;
+    }
+    .color{
+        position: absolute; bottom: 15%;font-weight: 500; text-transform: capitalize;
+    }
+    .price{
+        position: absolute; bottom: 5%;font-weight: 600; font-size: 18px; text-transform: capitalize;
+    }
+</style>
+    </head>
+<body>
+   <div class="main">
+    <div class="nav">
+        <div class="nav-part-1">
+            <img src="logo1.png" alt="logo" >
+            <ul>
+                <li>Home</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Collection</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="nav-part-2">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-2-line"></i>
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <h5>Explore limited edition</h5>
+            <h1>Nike limited edition</h1>
+            <p>Unleash the extrordinary.Elevate your game with Nike's
+                Limited Edition, where innovation meets style, 
+                leaving a lasting mark.Just do it. </p>
+                <button class="btn">Shop Now</button>
+        </div>
+        <div class="content-right">
+<div class="product">
+    <img src="s1.jpg" alt="nike shoes" >
+    <h4> Nike Sneaker</h4>
+    <p class="category">Men's shoes</p>
+    <p class="color">Color: White & Grey</p>
+    <p class="price">14,999$</p>
+</div>
+<div class="product">
+    <img src="s2.jpg" alt="nike shoes" >
+    <h4> Nike Lunar Roam</h4>
+    <p class="category">Men's shoes</p>
+    <p class="color">Color: White</p>
+    <p class="price">12,999$</p>
+</div>
+<div class="product">
+    <img src="s3.jpg" alt="nike shoes" >
+    <h4> Nike Nocta Glide</h4>
+    <p class="category">Men's shoes</p>
+    <p class="color">Color: Soft Grey</p>
+    <p class="price">19,999$</p>
+</div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
